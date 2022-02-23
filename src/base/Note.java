@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Note {
-	private Date date;
-	private String title;
+	public Date date;
+	public String title;
 	
 	public Note(String title) {
 		this.title = title;

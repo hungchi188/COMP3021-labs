@@ -5,8 +5,8 @@ import java.util.Objects;
 
 public class Folder {
 
-	private ArrayList<Note> notes;
-	private String name;
+	public ArrayList<Note> notes;
+	public String name;
 	
 	public Folder(String name) {
 		this.name = name;

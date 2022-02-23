@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class NoteBook {
 
-	private ArrayList<Folder> folders;
+	public ArrayList<Folder> folders;
 	
 	public NoteBook() {
 		folders = new ArrayList<Folder>();
