@@ -132,4 +132,22 @@ public class Folder implements Comparable<Folder>, java.io.Serializable{
 		return tarNote;
 	}
 
+	public boolean removeNotes(String title) {
+		// Given the title of the note, delete it from the folder.
+		// Return true if it is deleted successfully, otherwise return false.
+		Note temp = null;
+		for(Note note : notes){
+			if (note.getTitle().equals(title)){
+				temp = note;
+			}
+		}
+		if (temp == null)
+			return false;
+		else{
+			notes.remove(temp);
+			return true;
+		}
+	}
+
+
 }
